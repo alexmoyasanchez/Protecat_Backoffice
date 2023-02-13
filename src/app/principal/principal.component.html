@@ -1,0 +1,39 @@
+<html>
+
+<head>
+    <style>
+        body {
+            background-color: #f0e1f8;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="btnContainer">
+        <button (click)="newUser()" class="btn">AÑADIR UN USUARIO</button>
+    </div>
+
+    <div class="div1"></div>
+
+    <div class="row">
+        <div class="column">
+            <app-data-users *ngFor="let user of users3" [user]="user">
+            </app-data-users>
+
+        </div>
+
+        <div class="column">
+            <app-data-users *ngFor="let user of users2" [user]="user">
+            </app-data-users>
+
+        </div>
+
+        <div class="column">
+            <app-data-users *ngFor="let user of users1" [user]="user">
+            </app-data-users>
+        </div>
+    </div>
+</body>
+
+</html>
